@@ -1,244 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bengkel Las Profesional • Las & Fabrication Indonesia</title>
-  <meta name="description" content="Bengkel las profesional untuk rangka, pagar, kanopi, tangga, dan project fabrikasi di seluruh Indonesia. Garansi kerja rapi dan bahan berkualitas." />
-  <style>
-    :root{--accent:#0b6efd;--muted:#6b7280;--bg:#f7f7fb;--card:#ffffff}
-    *{box-sizing:border-box}
-    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;line-height:1.5;margin:0;background:var(--bg);color:#0b1a2b}
-    a{color:var(--accent);text-decoration:none}
-    header{background:linear-gradient(90deg,#072f5f 0%, rgba(11,110,253,0.9)100%);color:#fff;padding:28px 18px}
-    .container{max-width:1100px;margin:0 auto;padding:0 18px}
-    .brand{display:flex;gap:12px;align-items:center}
-    .brand img{width:58px;height:58px;object-fit:cover;border-radius:8px;background:#fff;padding:4px}
-    .brand h1{font-size:20px;margin:0}
-    .hero{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center;padding:34px 0}
-    .hero .intro{background:transparent}
-    .hero h2{margin:0 0 12px;font-size:28px}
-    .hero p{color:rgba(255,255,255,0.95);margin:0 0 18px}
-    .btn{display:inline-block;padding:10px 16px;border-radius:8px;background:#fff;color:var(--accent);font-weight:600}
-    nav{display:flex;gap:14px;justify-content:flex-end;align-items:center}
-
-    /* Services */
-    section{padding:36px 0}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
-    .card h3{margin:0 0 8px}
-    .muted{color:var(--muted);font-size:14px}
-
-    /* Gallery */
-    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:8px}
-
-    /* Contact */
-    form{display:grid;gap:10px}
-    label{font-size:13px;color:var(--muted)}
-    input, textarea, select{padding:10px;border-radius:8px;border:1px solid #e6e9ee}
-    .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-
-    footer{padding:22px 0;background:#fff;border-top:1px solid #e9eef5}
-    .footer-grid{display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between}
-
-    /* Responsive */
-    @media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:1fr}.two{grid-template-columns:1fr}}
-    @media (max-width:520px){.grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.brand img{width:46px;height:46px}}
-
-    /* Small helpers */
-    .kicker{display:inline-block;background:rgba(255,255,255,0.12);padding:6px 10px;border-radius:999px;font-weight:600}
-    .price{font-weight:800;font-size:22px}
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-    .whatsapp{background:#25D366;color:#fff;padding:10px 12px;border-radius:10px}
-    .hero img{width:100%;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,0.2)}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Bengkel Las Profesional - Indonesia</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #333; color: white; padding: 20px; text-align: center; }
+        nav { background: #444; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        .hero { text-align: center; padding: 50px; background: #f4f4f4; }
+        .hero img { max-width: 100%; border-radius: 10px; }
+        section { padding: 40px; text-align: center; }
+        .services, .projects { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+        .card { border: 1px solid #ddd; border-radius: 10px; padding: 20px; width: 300px; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .card img { max-width: 100%; border-radius: 10px; margin-bottom: 15px; }
+        footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 20px; }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
-      <div class="brand">
-        <img src="https://via.placeholder.com/160x160.png?text=Logo" alt="Logo Bengkel Las">
-        <div>
-          <h1>Bengkel Las Profesional</h1>
-          <div class="muted">Rangka | Pagar | Kanopi | Tangga | Fabrikasi</div>
-        </div>
-      </div>
-      <nav>
+    <header>
+        <h1>Bengkel Las Profesional</h1>
+        <p>Layanan Jasa Las Terbaik di Indonesia</p>
+    </header>
+
+    <nav>
         <a href="#layanan">Layanan</a>
-        <a href="#galeri">Galeri</a>
-        <a href="#testimoni">Testimoni</a>
-        <a href="#kontak" class="kicker">Hubungi Kami</a>
-      </nav>
+        <a href="#proyek">Proyek</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <div class="hero">
+        <h2>Solusi Konstruksi Baja & Las Profesional</h2>
+        <p>Kami melayani kebutuhan las dan fabrikasi baja untuk berbagai proyek Anda.</p>
+        <img src="https://images.openai.com/thumbnails/url/okhwuHicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw6MKqsqjc83D9F1DS10towsLM6MNNfNcMvK8Em3yHFLyYt09coP1fWyLPYsTfX0MggqyQ53iyxx9MlTKwYAz6gpSQ" alt="Proyek Jembatan Baja">
     </div>
 
-    <div class="container">
-      <div class="hero">
-        <div class="intro">
-          <h2>Jasa Bengkel Las Profesional di Seluruh Indonesia</h2>
-          <p>Kami melayani pembuatan rangka besi, pagar, kanopi, tangga, railing, dan jasa fabrikasi custom. Tukang berpengalaman, bahan tersedia, garansi pemasangan.</p>
-          <div class="cta-row">
-            <a href="#kontak" class="btn">Dapatkan Penawaran</a>
-            <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20konsultasi%20proyek%20las" target="_blank" rel="noopener" class="whatsapp">Chat WhatsApp</a>
-          </div>
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/600x400.png?text=Foto+Bengkel+Las" alt="Hero Bengkel Las">
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main class="container">
-    <!-- Layanan -->
     <section id="layanan">
-      <h2 style="margin:0 0 12px">Layanan Kami</h2>
-      <p class="muted">Solusi lengkap untuk kebutuhan las dan fabrikasi — dari detail arsitektural hingga proyek industri.</p>
-      <div class="grid" style="margin-top:18px">
-        <div class="card">
-          <img src="https://via.placeholder.com/400x250.png?text=Kanopi" alt="Kanopi" style="width:100%;border-radius:8px;margin-bottom:8px">
-          <h3>Kanopi & Pintu</h3>
-          <p class="muted">Desain rapi, material anti karat, finishing cat powder coating tersedia.</p>
+        <h2>Layanan Kami</h2>
+        <div class="services">
+            <div class="card">
+                <img src="https://images.openai.com/thumbnails/url/8TcGhHicu1mSUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw6Md6nycvULcg8rM3JyN8028PDIMTIOCS7J98_3NzJL1y0tqwhICjHL9s8tdc9yrQzxMksxCy_OCfCrKlcrBgD9ySmd" alt="Workshop Las">
+                <h3>Konstruksi Baja</h3>
+                <p>Pembuatan dan pemasangan konstruksi baja untuk kebutuhan gedung dan industri.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.openai.com/thumbnails/url/Safu73icu1mSUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw6qDHQ2j4iKzy91cot3r8zxSC1MC860TDfwy8wKrjLwMA0ITTN0L6lwyUy19I3MzM2KTw_R9S62MMkPd1QrBgAmDCny" alt="Pekerja Las">
+                <h3>Pagar & Kanopi</h3>
+                <p>Pembuatan pagar besi, kanopi, dan teralis dengan desain sesuai keinginan.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.openai.com/thumbnails/url/phjzW3icu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw5KMUnKTgzw8s9O93dzNTJ0dPNILEvXzQsydtP1D3RMTfJySzUyyTY09CwprypNzoz3LMtxzynwMfBUKwYApB0ocA" alt="Struktur Baja">
+                <h3>Perbaikan Las</h3>
+                <p>Perbaikan dan pengelasan ulang untuk berbagai kebutuhan peralatan dan struktur.</p>
+            </div>
         </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/400x250.png?text=Pagar" alt="Pagar" style="width:100%;border-radius:8px;margin-bottom:8px">
-          <h3>Pagar & Teralis</h3>
-          <p class="muted">Pagar rumah, teralis jendela, keamanan yang estetis & kokoh.</p>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/400x250.png?text=Rangka+Tangga" alt="Rangka dan Tangga" style="width:100%;border-radius:8px;margin-bottom:8px">
-          <h3>Rangka Bangunan & Tangga</h3>
-          <p class="muted">Rangka untuk gudang, gudang racking, tangga besi untuk interior dan eksterior.</p>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/400x250.png?text=Fabrikasi" alt="Fabrikasi" style="width:100%;border-radius:8px;margin-bottom:8px">
-          <h3>Fabrikasi Custom</h3>
-          <p class="muted">Desain sesuai gambar kerja atau buatkan shop drawing dan prototype.</p>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/400x250.png?text=Repair" alt="Repair" style="width:100%;border-radius:8px;margin-bottom:8px">
-          <h3>Repair & Maintenance</h3>
-          <p class="muted">Perbaikan struktur, pengelasan ulang, penguatan sambungan.</p>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/400x250.png?text=Finishing" alt="Finishing" style="width:100%;border-radius:8px;margin-bottom:8px">
-          <h3>Finishing & Coating</h3>
-          <p class="muted">Pengamplasan, cat, galvanis, powder coating sesuai kebutuhan.</p>
-        </div>
-      </div>
     </section>
 
-    <!-- Galeri -->
-    <section id="galeri">
-      <h2>Galeri Proyek</h2>
-      <p class="muted">Contoh hasil kerja kami — kualitas dan detail kerja yang rapi.</p>
-      <div class="gallery" style="margin-top:12px">
-        <img src="https://via.placeholder.com/600x400.png?text=Proyek+1" alt="Proyek 1">
-        <img src="https://via.placeholder.com/600x400.png?text=Proyek+2" alt="Proyek 2">
-        <img src="https://via.placeholder.com/600x400.png?text=Proyek+3" alt="Proyek 3">
-        <img src="https://via.placeholder.com/600x400.png?text=Proyek+4" alt="Proyek 4">
-        <img src="https://via.placeholder.com/600x400.png?text=Proyek+5" alt="Proyek 5">
-        <img src="https://via.placeholder.com/600x400.png?text=Proyek+6" alt="Proyek 6">
-      </div>
+    <section id="proyek">
+        <h2>Proyek Kami</h2>
+        <div class="projects">
+            <div class="card">
+                <img src="https://images.openai.com/thumbnails/url/okhwuHicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw6MKqsqjc83D9F1DS10towsLM6MNNfNcMvK8Em3yHFLyYt09coP1fWyLPYsTfX0MggqyQ53iyxx9MlTKwYAz6gpSQ" alt="Konstruksi Baja Jembatan">
+                <h3>Jembatan Baja</h3>
+                <p>Pengerjaan proyek jembatan baja dengan standar keamanan tinggi.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.openai.com/thumbnails/url/phjzW3icu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw5KMUnKTgzw8s9O93dzNTJ0dPNILEvXzQsydtP1D3RMTfJySzUyyTY09CwprypNzoz3LMtxzynwMfBUKwYApB0ocA" alt="Gudang Baja">
+                <h3>Gudang Industri</h3>
+                <p>Pembuatan gudang baja yang kokoh, aman, dan efisien.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Testimoni -->
-    <section id="testimoni">
-      <h2>Testimoni Pelanggan</h2>
-      <div class="grid" style="margin-top:12px">
-        <div class="card">
-          <img src="https://via.placeholder.com/80x80.png?text=A" alt="Andi" style="border-radius:50%;margin-bottom:8px">
-          <strong>Andi, Surabaya</strong>
-          <p class="muted">"Hasil pengerjaan rapi, pengerjaan cepat dan timnya profesional. Recommended!"</p>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/80x80.png?text=S" alt="Sri" style="border-radius:50%;margin-bottom:8px">
-          <strong>Sri, Jakarta</strong>
-          <p class="muted">"Kanopi baru kami kuat dan lebih estetik. Terima kasih tim bengkel las."</p>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/80x80.png?text=B" alt="Budi" style="border-radius:50%;margin-bottom:8px">
-          <strong>Budi, Bandung</strong>
-          <p class="muted">"Harga transparan, pengerjaan sesuai jadwal, memuaskan."</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Kontak -->
     <section id="kontak">
-      <h2>Kontak & Permintaan Penawaran</h2>
-      <p class="muted">Isi form atau hubungi kami lewat WhatsApp untuk estimasi harga cepat.</p>
-      <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:12px">
-        <div class="card">
-          <form id="contactForm" onsubmit="submitForm(event)">
-            <div class="two">
-              <div>
-                <label>Nama Lengkap</label>
-                <input type="text" id="name" required placeholder="Nama Anda">
-              </div>
-              <div>
-                <label>Telepon / WhatsApp</label>
-                <input type="tel" id="phone" required placeholder="08xx....">
-              </div>
-            </div>
-            <label>Email (opsional)</label>
-            <input type="email" id="email" placeholder="email@domain.com">
-            <label>Jenis Layanan</label>
-            <select id="service">
-              <option>Kanopi & Pintu</option>
-              <option>Pagar & Teralis</option>
-              <option>Rangka & Tangga</option>
-              <option>Fabrikasi Custom</option>
-              <option>Repair & Maintenance</option>
-            </select>
-            <label>Deskripsi singkat proyek / ukuran</label>
-            <textarea id="message" rows="4" placeholder="Ceritakan kebutuhan Anda (ukuran, material, lokasi, tanggal target)"></textarea>
-            <div style="display:flex;gap:10px;margin-top:8px">
-              <button type="submit" class="btn">Kirim Permintaan</button>
-              <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20konsultasi%20proyek%20las" target="_blank" rel="noopener" class="whatsapp">Chat WhatsApp</a>
-            </div>
-          </form>
-          <div id="result" style="margin-top:10px;color:green;display:none">Terima kasih! Tim kami akan menghubungi Anda segera.</div>
-        </div>
-
-        <aside class="card">
-          <h3>Lokasi & Jam Kerja</h3>
-          <p class="muted">Kantor pusat: Jakarta (bisa kirim ke seluruh wilayah Indonesia).<br>Senin - Sabtu: 08:00 - 17:00</p>
-          <div style="margin-top:12px">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18" width="100%" height="200" style="border:0;border-radius:8px" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-          <h3 style="margin-top:14px">Harga Estimasi</h3>
-          <p class="muted">Contoh estimasi singkat (harga dapat berubah setelah survei):</p>
-          <ul class="muted">
-            <li>Kanopi per m2: <strong>Rp 350.000 - Rp 750.000</strong></li>
-            <li>Pagar per meter: <strong>Rp 250.000 - Rp 600.000</strong></li>
-            <li>Rangka ringan per m: <strong>Rp 200.000 - Rp 550.000</strong></li>
-          </ul>
-        </aside>
-      </div>
+        <h2>Kontak Kami</h2>
+        <p>Hubungi kami untuk konsultasi atau pemesanan jasa las profesional:</p>
+        <p>Email: <a href="mailto:info@bengkellaspro.com">info@bengkellaspro.com</a></p>
+        <p>Telepon: 0812-3456-7890</p>
     </section>
-  </main>
 
-  <footer>
-    <div class="container footer-grid">
-      <div>
-        <strong>Bengkel Las Profesional</strong>
-        <div class="muted">Jl. Contoh No.12, Jakarta — +62 812-3456-7890</div>
-      </div>
-      <div class="muted">© 2025 Bengkel Las Profesional. All rights reserved.</div>
-    </div>
-  </footer>
-
-  <script>
-    function submitForm(e){
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      if(!name || !phone){alert('Isi nama dan nomor telepon.');return}
-      document.getElementById('contactForm').reset();
-      document.getElementById('result').style.display='block';
-      setTimeout(()=>document.getElementById('result').style.display='none',5000);
-    }
-  </script>
+    <footer>
+        <p>&copy; 2025 Bengkel Las Profesional Indonesia. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
