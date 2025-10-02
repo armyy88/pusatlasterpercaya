@@ -15,7 +15,7 @@
     .brand{display:flex;gap:12px;align-items:center}
     .brand img{width:58px;height:58px;object-fit:cover;border-radius:8px;background:#fff;padding:4px}
     .brand h1{font-size:20px;margin:0}
-    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:34px 0}
+    .hero{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center;padding:34px 0}
     .hero .intro{background:transparent}
     .hero h2{margin:0 0 12px;font-size:28px}
     .hero p{color:rgba(255,255,255,0.95);margin:0 0 18px}
@@ -51,6 +51,7 @@
     .price{font-weight:800;font-size:22px}
     .cta-row{display:flex;gap:12px;flex-wrap:wrap}
     .whatsapp{background:#25D366;color:#fff;padding:10px 12px;border-radius:10px}
+    .hero img{width:100%;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,0.2)}
   </style>
 </head>
 <body>
@@ -81,6 +82,9 @@
             <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20konsultasi%20proyek%20las" target="_blank" rel="noopener" class="whatsapp">Chat WhatsApp</a>
           </div>
         </div>
+        <div>
+          <img src="https://via.placeholder.com/600x400.png?text=Foto+Bengkel+Las" alt="Hero Bengkel Las">
+        </div>
       </div>
     </div>
   </header>
@@ -92,26 +96,32 @@
       <p class="muted">Solusi lengkap untuk kebutuhan las dan fabrikasi — dari detail arsitektural hingga proyek industri.</p>
       <div class="grid" style="margin-top:18px">
         <div class="card">
+          <img src="https://via.placeholder.com/400x250.png?text=Kanopi" alt="Kanopi" style="width:100%;border-radius:8px;margin-bottom:8px">
           <h3>Kanopi & Pintu</h3>
           <p class="muted">Desain rapi, material anti karat, finishing cat powder coating tersedia.</p>
         </div>
         <div class="card">
+          <img src="https://via.placeholder.com/400x250.png?text=Pagar" alt="Pagar" style="width:100%;border-radius:8px;margin-bottom:8px">
           <h3>Pagar & Teralis</h3>
           <p class="muted">Pagar rumah, teralis jendela, keamanan yang estetis & kokoh.</p>
         </div>
         <div class="card">
+          <img src="https://via.placeholder.com/400x250.png?text=Rangka+Tangga" alt="Rangka dan Tangga" style="width:100%;border-radius:8px;margin-bottom:8px">
           <h3>Rangka Bangunan & Tangga</h3>
           <p class="muted">Rangka untuk gudang, gudang racking, tangga besi untuk interior dan eksterior.</p>
         </div>
         <div class="card">
+          <img src="https://via.placeholder.com/400x250.png?text=Fabrikasi" alt="Fabrikasi" style="width:100%;border-radius:8px;margin-bottom:8px">
           <h3>Fabrikasi Custom</h3>
           <p class="muted">Desain sesuai gambar kerja atau buatkan shop drawing dan prototype.</p>
         </div>
         <div class="card">
+          <img src="https://via.placeholder.com/400x250.png?text=Repair" alt="Repair" style="width:100%;border-radius:8px;margin-bottom:8px">
           <h3>Repair & Maintenance</h3>
           <p class="muted">Perbaikan struktur, pengelasan ulang, penguatan sambungan.</p>
         </div>
         <div class="card">
+          <img src="https://via.placeholder.com/400x250.png?text=Finishing" alt="Finishing" style="width:100%;border-radius:8px;margin-bottom:8px">
           <h3>Finishing & Coating</h3>
           <p class="muted">Pengamplasan, cat, galvanis, powder coating sesuai kebutuhan.</p>
         </div>
@@ -137,14 +147,17 @@
       <h2>Testimoni Pelanggan</h2>
       <div class="grid" style="margin-top:12px">
         <div class="card">
+          <img src="https://via.placeholder.com/80x80.png?text=A" alt="Andi" style="border-radius:50%;margin-bottom:8px">
           <strong>Andi, Surabaya</strong>
           <p class="muted">"Hasil pengerjaan rapi, pengerjaan cepat dan timnya profesional. Recommended!"</p>
         </div>
         <div class="card">
+          <img src="https://via.placeholder.com/80x80.png?text=S" alt="Sri" style="border-radius:50%;margin-bottom:8px">
           <strong>Sri, Jakarta</strong>
           <p class="muted">"Kanopi baru kami kuat dan lebih estetik. Terima kasih tim bengkel las."</p>
         </div>
         <div class="card">
+          <img src="https://via.placeholder.com/80x80.png?text=B" alt="Budi" style="border-radius:50%;margin-bottom:8px">
           <strong>Budi, Bandung</strong>
           <p class="muted">"Harga transparan, pengerjaan sesuai jadwal, memuaskan."</p>
         </div>
@@ -192,7 +205,6 @@
           <h3>Lokasi & Jam Kerja</h3>
           <p class="muted">Kantor pusat: Jakarta (bisa kirim ke seluruh wilayah Indonesia).<br>Senin - Sabtu: 08:00 - 17:00</p>
           <div style="margin-top:12px">
-            <!-- Ganti src iframe dengan Google Maps embed link yang valid -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18" width="100%" height="200" style="border:0;border-radius:8px" allowfullscreen="" loading="lazy"></iframe>
           </div>
           <h3 style="margin-top:14px">Harga Estimasi</h3>
@@ -213,33 +225,20 @@
         <strong>Bengkel Las Profesional</strong>
         <div class="muted">Jl. Contoh No.12, Jakarta — +62 812-3456-7890</div>
       </div>
-      <div class="muted">© " + new Date().getFullYear() + " Bengkel Las Profesional. All rights reserved.</div>
+      <div class="muted">© 2025 Bengkel Las Profesional. All rights reserved.</div>
     </div>
   </footer>
 
   <script>
-    // Simple client-side form handler (replace with server endpoint or email integration)
     function submitForm(e){
       e.preventDefault();
       const name = document.getElementById('name').value.trim();
       const phone = document.getElementById('phone').value.trim();
       if(!name || !phone){alert('Isi nama dan nomor telepon.');return}
-      // Simulate sending
       document.getElementById('contactForm').reset();
       document.getElementById('result').style.display='block';
       setTimeout(()=>document.getElementById('result').style.display='none',5000);
-      // Optional: open whatsapp prefilled message
-      // const text = encodeURIComponent(`Halo, saya ${name}. Saya butuh layanan: ${document.getElementById('service').value}. Detail: ${document.getElementById('message').value}`);
-      // window.open(`https://wa.me/6281234567890?text=${text}`,'_blank');
     }
-
-    // Set current year in footer
-    (function(){
-      try{
-        const el = document.querySelector('footer .container .muted');
-        if(el) el.innerText = '© ' + new Date().getFullYear() + ' Bengkel Las Profesional. All rights reserved.';
-      }catch(e){/* ignore */}
-    })();
   </script>
 </body>
 </html>
